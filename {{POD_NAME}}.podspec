@@ -16,13 +16,13 @@ Pod::Spec.new do |s|
     s.homepage         = 'TODO: you must set this homepage'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
+    s.author           = { '{{USER_NAME}}' => '{}{USER_EMAIL}}' }
     s.source           = { }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
     s.ios.deployment_target = '8.0'
   
-    s.source_files = '{{POD_NAME}}/Classes/**/*'
+    s.source_files = 'Pod/Classes/**/*'
     
     # s.resource_bundles = {
     #   '${POD_NAME}' => ['${POD_NAME}/Assets/*.png']
