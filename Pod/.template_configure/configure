@@ -1,0 +1,6 @@
+require "tty-prompt"
+metas = {}
+
+
+# at the end you must return an hash object
+metas
