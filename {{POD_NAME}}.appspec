@@ -1,0 +1,11 @@
+CocoaDepot::AppSpecification.new do |slice|
+    slice.target '{{POD_NAME}}-Demo' do |target|
+        target.dependency '{{POD_NAME}}', :source => :depot
+        target.source_files = "Demo/sources/**/*"
+        target.localization_resource_files = "Demo/localizations/*.lproj"
+        target.resources = "Demo/resources/**/*.*"
+        target.share_build_settings do |share|
+          share.info_plist_file = "Demo/Info.plist"
+        end
+    end
+end
