@@ -1,4 +1,5 @@
 CocoaDepot::AppSlice.new do |slice|
+    slice.host_dependency '{{POD_NAME}}', :source => :component
     slice.main_target do |target|
         target.dependency '{{POD_NAME}}', :source => :depot
     end
